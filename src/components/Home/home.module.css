@@ -1,16 +1,23 @@
 .home {
     position: relative;
-    top: -15vh;
-    width: 80vw;
+    top: -17vh;
+    width: 85vw;
     margin-inline: auto;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
     background-color: var(--Color1);
     border-radius: 1rem;
-    border: 1px solid blue;
     text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .home {
+        width: 70vw;
+    }
+}
+
 .head_Home {
-    margin-top: 10vh;
+    margin-bottom: 5vh;
 
     h2 {
         font-size: 2rem;
@@ -21,14 +28,33 @@
     p {
         width: 50%;
         margin: 3vh auto;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 500;
         color: var(--Color3);
     }
 
     img {
         position: absolute;
-        top: 30px;
+        top: 50px;
+        right: 24%;
         opacity: .5;
     }
+
+
+
+}
+
+button {
+    color: var(--Color5);
+    font-weight: 700;
+    padding: .7rem;
+    margin-inline: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--Color3);
 }

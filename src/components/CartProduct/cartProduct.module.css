@@ -1,0 +1,41 @@
+.cart {
+    position: relative;
+
+    .picture {
+        width: 280px;
+        border-radius: 10px;
+    }
+
+    .dataProduct {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline: 15px;
+
+        p {
+            color: var(--Color1);
+            font-size: .7rem;
+            font-weight: 800;
+            background-color: var(--Color4);
+            border-radius: 5px;
+            padding: 5px;
+        }
+    }
+
+    span {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        background-color: var(--Color6);
+        color: var(--Color1);
+        font-size: .7rem;
+        font-weight: 800;
+        padding: 5px;
+        border-radius: 25px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: left;
+    }
+}
