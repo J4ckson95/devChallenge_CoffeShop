@@ -15,7 +15,8 @@ const CartProduct: React.FC<CartProductProps> = ({dataProduct}) =>{
             <div className={style.rating}>
                 <img src={dataProduct.rating === null ? Logo_start: logo_start_fill}></img>
                 <p>{dataProduct.rating}</p>
-                <p>{dataProduct.votes}</p>
+                {dataProduct.votes === 0 ?<p className={style.votes}>No rating</p>:<p className={style.votes}>({dataProduct.votes}) votos</p>}
+                {!dataProduct.available && <p className={style.sold}>Sold out</p>}
             </div>
         </div>
     )

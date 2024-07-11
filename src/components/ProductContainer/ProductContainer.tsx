@@ -14,8 +14,6 @@ const ProductContainer: React.FC<ProductContainerProps> =({filter}) =>{
         getData()
     },[])
     const filterData = filter === "instock"? data.filter(product => product.available): data
-    console.log("FilterData",filterData);
-    
     return(
         <div className={style.container}>
             {filterData && filterData.map((element,index)=> <CartProduct key={index} dataProduct={element}></CartProduct>)}

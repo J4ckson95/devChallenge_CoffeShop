@@ -40,8 +40,11 @@
         opacity: .5;
     }
 
-
-
+    @media screen and (max-width: 1024px) {
+        p {
+            width: 75%;
+        }
+    }
 }
 
 button {

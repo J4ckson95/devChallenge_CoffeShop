@@ -1,16 +1,30 @@
 .cart {
     position: relative;
+    margin-bottom: 5vh;
 
     .picture {
         width: 280px;
         border-radius: 10px;
     }
 
+    span {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        background-color: var(--Color6);
+        color: var(--Color1);
+        font-size: .7rem;
+        font-weight: 800;
+        padding: 5px 10px;
+        border-radius: 25px;
+    }
+
     .dataProduct {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-inline: 15px;
+        margin-top: 2%;
+        margin-inline: 7%;
 
         p {
             color: var(--Color1);
@@ -22,20 +36,38 @@
         }
     }
 
-    span {
-        position: absolute;
-        top: 10px;
-        left: 30px;
-        background-color: var(--Color6);
-        color: var(--Color1);
-        font-size: .7rem;
-        font-weight: 800;
-        padding: 5px;
-        border-radius: 25px;
-    }
-
     .rating {
         display: flex;
         justify-content: left;
+        align-items: center;
+        gap: 5px;
+        padding-left: 7%;
+        margin-top: 5px;
+
+        .votes {
+            font-size: .8rem;
+            font-weight: 700;
+            color: var(--Color3);
+        }
+
+        .sold {
+            color: var(--Color7);
+            font-weight: 600;
+            margin-left: 25%;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        span {
+            left: 17%;
+        }
+
+        .dataProduct {
+            margin-inline: 15%;
+        }
+
+        .rating {
+            margin-left: 9%;
+        }
     }
 }
